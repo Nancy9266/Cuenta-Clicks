@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.unlimitedappworks.cuentaclicks.MainActivity"
+    android:id="@+id/rl_main"
+    android:background="#faf73c">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="onClick"
+        android:id="@+id/btn_click"
+        android:background="#080000"
+        android:textColor="#fdfafa"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/btn_focus" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="onLongClick"
+        android:id="@+id/btn_lnclick"
+        android:textColor="#fdfafa"
+        android:background="#030000"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/btn_touch" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="onFocusChange"
+        android:id="@+id/btn_focus"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColor="#fdfafa"
+        android:background="#030000"
+        android:layout_below="@+id/tv_lnclick"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="onKeyListener"
+        android:id="@+id/btn_key"
+        android:textColor="#fdfafa"
+        android:background="#030000"
+        android:layout_below="@+id/tv_focus"
+        android:layout_marginTop="83dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="onTouchListener"
+        android:id="@+id/btn_touch"
+        android:textColor="#fdfafa"
+        android:background="#030000"
+        android:layout_above="@+id/tv_key"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/tv_click"
+        android:text="0"
+        android:gravity="center_horizontal"
+        android:textColor="#f70a0a"
+        android:layout_below="@+id/btn_click"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/tv_lnclick"
+        android:gravity="center_horizontal"
+        android:textColor="#f70a0a"
+        android:layout_below="@+id/btn_lnclick"
+        android:layout_alignEnd="@+id/btn_lnclick" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/tv_focus"
+        android:layout_below="@+id/btn_focus"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center_horizontal"
+        android:textColor="#f70a0a" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/tv_key"
+        android:gravity="center_horizontal"
+        android:textColor="#f70a0a"
+        android:layout_below="@+id/btn_key"
+        android:layout_alignStart="@+id/btn_key" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/tv_touch"
+        android:gravity="center_horizontal"
+        android:textColor="#f70a0a"
+        android:layout_below="@+id/btn_touch"
+        android:layout_alignEnd="@+id/btn_touch" />
+
+
+</RelativeLayout>
